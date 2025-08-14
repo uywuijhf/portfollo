@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - g</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #444;
+    }
+    article {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #eee;
+      padding: 0.5rem;
+      margin: 0.25rem 0;
+      border-radius: 4px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.25rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input[type="submit"] {
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>g — Frontend Developer</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I build production-ready frontends using HTML, CSS, and JavaScript.</p>
+      <p><a href="resume.pdf" download>Download Resume</a></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>AI Resume & Project Search</h3>
+        <p>Frontend that indexes resumes and projects. Search, filter, preview.</p>
+        <a href="#">View Project</a>
+      </article>
+      <article>
+        <h3>Realtime Chat UI</h3>
+        <p>Websocket-powered chat interface with emoji support.</p>
+        <a href="#">View Project</a>
+      </article>
+      <article>
+        <h3>Portfolio CMS Mock</h3>
+        <p>Static site generator demo with markdown projects.</p>
+        <a href="#">View Project</a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>TypeScript</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:you@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 g</p>
+    <p>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>

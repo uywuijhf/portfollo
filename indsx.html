@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>g Portfolio</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    html {scroll-behavior: smooth;}
+    body {font-family: Arial, sans-serif; background: #f5f7fa; color: #333;}
+    header {
+      background: linear-gradient(135deg, #4a90e2, #007aff);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+    nav {
+      background: #003366;
+      text-align: center;
+      padding: 0.5rem;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {margin-bottom: 1rem; color: #007aff;}
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {transform: translateY(-5px);}
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skills-list span {
+      background: #e6f0ff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #007aff;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>g — Frontend Developer</h1>
+    <p>Building modern, fast, and user-friendly web experiences</p>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="AI Resume">
+        <div class="card-content">
+          <h3>AI Resume Search</h3>
+          <p>Searchable database of resumes and project profiles.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Chat UI">
+        <div class="card-content">
+          <h3>Realtime Chat App</h3>
+          <p>WebSocket-powered chat with emoji and media sharing.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Portfolio CMS">
+        <div class="card-content">
+          <h3>Portfolio CMS</h3>
+          <p>Static site portfolio with markdown content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="E-commerce UI">
+        <div class="card-content">
+          <h3>E-commerce UI</h3>
+          <p>Responsive shopping interface with cart and checkout flow.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Weather Dashboard">
+        <div class="card-content">
+          <h3>Weather Dashboard</h3>
+          <p>Live weather updates using public APIs with chart visuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Node.js</span>
+      <span>Git</span>
+      <span>Responsive Design</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 g — All rights reserved</p>
+  </footer>
+</body>
+</html>
